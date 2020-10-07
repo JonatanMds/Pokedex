@@ -8,10 +8,35 @@
 </head>
 <body>
     <div class="container">
+        
         <img src="./assets/Pokedex-Logo.png" ><br>
+        
+        <ul class="filter">
+            <li class="card active"  class="todos" data-filter="todos" style=background-color:cadetblue>Todos</li>
+            <li class="card" class="grass" data-filter="grass" style=background-color:#22ff3d;>Grass</li>
+            <li class="card" class="fire" data-filter="fire" style=background-color:#ff4040;>Fire</li>
+            <li class="card" class="water" data-filter="water" style=background-color:aqua;>Water</li>
+            <li class="card" class="bug" data-filter="bug" style=background-color:#fff9ad;>Bug</li>
+            <li class="card" class="normal" data-filter="normal" style=background-color:#fffef1;>Normal</li>
+            <li class="card" class="poison" data-filter="poison" style=background-color:#980cc7;>Poison</li>
+            <li class="card" class="electric" data-filter="electric" style=background-color:#f2ff27;>Electric</li>
+            <li class="card" class="ground" data-filter="ground" style=background-color:#aa4723;>Ground</li>
+            <li class="card" class="fairy" data-filter="fairy" style=background-color:#e170be;>Fairy</li>
+            <li class="card" class="fighting" data-filter="fighting" style=background-color:#a62325;>Fighting</li>
+            <li class="card" class="psychic" data-filter="psychic" style=background-color:#fa00c2;>Psychic</li>
+            <li class="card" class="rock" data-filter="rock" style=background-color:#d6b04c;>Rock</li>
+            <li class="card" class="dragon" data-filter="dragon" style="background-color:#f17f11;">Dragon</li>
+            <li class="card" class="dragon" data-filter="ghost" style=background-color:#8F006F;>Ghost</li>
+        </ul>
+        
         <ul data-js="pokedex" class="pokedex"></ul>
+
+
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="config.js"></script>
+    
     
 </body>
 </html>

@@ -6,9 +6,34 @@ body{
 
     text-align: center;
     background-color: #e9e9e9;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
-/*Foi criado um grid para organização das lis dentro da pagina*/
+/*Foi criado um grid para organização das lis dentro da ul .filter*/
+.filter{
+    display: grid;
+    /*Quantidade de colunas+tamanho*/
+    grid-template-columns: 110px 110px 110px 110px 110px;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    
+}
+.filter .card{
+    color: black;
+    /*colocando um pointer no curor do mouse*/
+    cursor: pointer;
+    width: 100px;
+    margin-bottom: 10px;
+    justify-self: center;
+    border-radius: 15px;
+    color: black;
+    font-weight: 600;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    
+
+}
 ul{
     display: grid;
     grid-template-columns:  350px 350px 350px;
@@ -22,15 +47,16 @@ li:hover{
 }
 
 
-/*style de lis*/
+/*style das lis*/
 .pokedex li{
     margin: 40px;
-    background-color: aqua;
     border-radius: 20px;
     transition: all 0.3s;
     display: grid;
     grid-template-columns: 250px;
     justify-content: center;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+
 }
 
 /*style das imagens*/
@@ -42,7 +68,6 @@ li img{
 }
 
 h2, p{
-    font-family: 'Roboto', sans-serif;
     margin: 10px;
     text-transform: capitalize;
 }
@@ -56,52 +81,55 @@ li .type{
 
 /*FOI COLOCADO UMA COR DE FUNDO PARA CADA TIPO DE POKÉMON*/
 
-ul .cardfire{
+ul .water{
+    background-color: aqua;
+}
+ul .fire{
     background-color: #ff4040;
 }
 
-ul .cardgrass{
+ul .grass{
    background-color: #22ff3d;
 }
 
-ul .cardnormal{
+ul .normal{
     background-color: #fffef1;
 }
-ul .cardbug{
+ul .bug{
     background-color: #fff9ad;
 }
 
-ul .cardelectric{
+ul .electric{
     background-color: #f2ff27;
 }
 
-ul .cardground{
+ul .ground{
     background-color: #aa4723;
 }
 
-ul .cardfairy{
+ul .fairy{
     background-color: #e170be;
 }
 
-ul .cardfighting{
+ul .fighting{
     background-color: #a62325;
 }
 
-ul .cardghost{
+ul .ghost{
     background-color: #8F006F;
 }
-ul .cardpsychic{
+ul .psychic{
     background-color: #fa00c2;
 }
 
-ul .cardrock{
+ul .rock{
     background-color: #d6b04c;
 }
 
-ul .carddragon{
+ul .dragon{
     background-color: #f17f11;
 }
 
-ul .cardpoison{
+ul .poison{
    background-color:#980cc7;
 }
